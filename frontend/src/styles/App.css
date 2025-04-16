@@ -1,0 +1,107 @@
+.header {
+  font-family: 'VintageMohai-DemoVersion-Regular', sans-serif;  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: white;
+  color: white;
+}
+@font-face {
+  font-family: 'VintageMohai-DemoVersion-Regular';
+  src: url('../assets/font/VintageMohai-DemoVersion-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.logo img {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #333;
+}
+
+/* Sepet ve Üye Girişi Butonları */
+.header-actions {
+  display: flex;
+  gap: 15px;
+}
+
+
+
+
+.cart-button, .login-button {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* İkon ile yazı arasına boşluk ekler */
+  color: black;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cart-button:hover, .login-button:hover {
+
+}
+/* Menü temel stil */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu > li {
+  margin-right: 20px;
+  position: relative; /* Alt menü için gerekli */
+}
+
+.menu > li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  color: #333;
+  display: block;
+}
+
+/* Alt menü (submenu) */
+.submenu .submenu-items {
+  display: none; /* Başlangıçta gizli */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  width: 200px;
+}
+
+.submenu-items li a {
+  padding: 10px;
+  font-size: 1em;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Hover ile alt menüyü gösterme */
+.submenu:hover .submenu-items {
+  display: block;
+}
+
+.submenu-items li a:hover {
+  background-color: #ddd;
+}
